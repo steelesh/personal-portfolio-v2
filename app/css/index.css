@@ -19,7 +19,7 @@ a:hover {
 }
 
 main {
-  margin: auto;
+  margin: 150px auto auto auto;
   background-color: whitesmoke;
   max-width: 870px;
   font-size: 16px;
@@ -37,6 +37,17 @@ main {
   margin: 0 2rem 0 0;
 }
 
+.portrait-mobile-container {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.portrait-mobile {
+  display: none;
+  width: 5rem;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +62,11 @@ main {
 header {
   max-width: 870px;
   margin: 2rem auto 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -180,7 +196,7 @@ span {
     padding: 0;
   }
   .link-container {
-    margin-bottom: 3rem;
+    margin-bottom: 30rem;
   }
   header {
     margin-top: 0;
@@ -190,5 +206,23 @@ span {
   }
   .footer-text {
     font-size: 6px;
+  }
+  .portrait-mobile-container {
+    display: flex;
+    justify-content: center;
+  }
+  .portrait-mobile {
+    width: 10rem;
+    border: 5px solid #24292f;
+    border-radius: 50%;
+    display: block;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+  .portrait-mobile:hover {
+    filter: grayscale(0%);
+  }
+  main {
+    margin-top: 121.5px;
   }
 }
