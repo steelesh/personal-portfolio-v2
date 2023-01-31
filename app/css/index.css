@@ -1,0 +1,131 @@
+a {
+  color: #0000ee;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: #0000ee;
+}
+
+main {
+  margin: auto;
+  max-width: 870px;
+  font-size: 16px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card {
+  padding: 0 1.2rem 1.2rem 1.2rem;
+  border: none;
+}
+
+.portrait {
+  max-width: 225px;
+  margin: 0 2rem 0 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  flex: 2;
+  min-width: 250px;
+  padding: 0 0 0 1.25rem;
+}
+
+header {
+  background-color: black;
+  max-width: 870px;
+  margin: 2rem auto 0 auto;
+}
+
+.name-header {
+  padding: 1rem 2rem;
+  font-size: 250%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-variant: small-caps;
+  color: white;
+}
+
+.text-container p {
+  margin-top: 1.75rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.portrait-container {
+  flex-basis: 175px;
+  padding: 1rem 0 0.8rem 0;
+}
+
+.footer-text {
+  font-size: 10px;
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  margin-top: 0.5rem;
+}
+
+.resume-link {
+  border: none;
+  margin-right: 20px;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+}
+
+.resume-link > a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link {
+  border: none;
+  background-color: black;
+  margin-left: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+.contact-link > a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-link {
+    padding: 0.5rem 0.75rem;
+  }
+  .resume-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (width <= 650px) {
+  .portrait,
+  .portrait-container {
+    display: none;
+  }
+  .text-container {
+    padding: 0;
+  }
+  header {
+    margin-top: 0;
+  }
+  .name-header {
+    text-align: left;
+  }
+}

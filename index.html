@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -38,22 +41,99 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./dist/style.css" />
-    <script defer src="./dist/script.js"></script>
-    <title>Title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./app/css/index.css" />
+    <title>Steele S.</title>
   </head>
   <body>
+    <header>
+      <h1 class="name-header"><b>Steele A. Shreve</b></h1>
+    </header>
     <main>
-      <h1>Starter Project Site!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum
-        ab nemo dolore? Odio dolorem pariatur officia sed, voluptatibus eaque
-        quasi, eum deleniti ratione veritatis, quis quibusdam quod itaque ipsum
-        est ipsa aut maiores similique aliquam voluptatum sunt velit fuga. Aut
-        autem dolore accusamus, quod esse atque eos ullam dolorum doloremque
-        optio quas quis incidunt cumque sit, velit dolor eligendi voluptate,
-        laborum vero? Assumenda iste omnis magnam, itaque earum sit!
-      </p>
+      <div class="card">
+        <div class="row">
+          <div class="portrait-container">
+            <img class="portrait" src="./assets/images/portrait.jpg" />
+          </div>
+          <div class="text-container">
+            <div>
+              <p>
+                I am a third-year IT student at the University of Cincinnati. My
+                concentration is software application development. I am pursuing
+                a
+                <a
+                  href="https://cech.uc.edu/schools/it/academics/undergrad-programs/bachelorsofscienceininformationtechnology.html"
+                  >Bachelors in Information Technology</a
+                >. My expected graduation is in May of 2025.
+                <br />
+                <br />
+                I am currently searching to secure an IT co-op/internship in
+                summer 2023 with a company that utilizes my technical skill set,
+                especially on web front-end web development, and provides me
+                with opportunities to interact with and learn from seasoned IT
+                employees.
+                <br />
+                <br />
+              </p>
+              <div class="link-container">
+                <button class="resume-link">
+                  <a href="./assets/steelesh.pdf" target="_blank"
+                    >View Resume</a
+                  >
+                </button>
+
+                <span>&nbsp; or &nbsp;</span>
+                <button class="contact-link">
+                  <a href="./contact.html">Get in Touch</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="footer-text">
+        Copyright &#169; 2022 Steele Shreve. All rights reserved.
+      </footer>
     </main>
+    <!-- Bootstrap CDNs-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        if ($(window).width() < 650) {
+          $('.name-header').text('Steele');
+        } else {
+          $('.name-header').text('Steele A. Shreve');
+        }
+      });
+      $(window).resize(function () {
+        if ($(window).width() < 650) {
+          $('.name-header').text('Steele');
+        } else {
+          $('.name-header').text('Steele A. Shreve');
+        }
+      });
+    </script>
   </body>
 </html>

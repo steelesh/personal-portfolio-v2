@@ -16,7 +16,7 @@ function cssTask() {
 
 // Javascript Task
 function jsTask() {
-  return src('./app/css/*.js', { sourcemaps: true })
+  return src('./app/js/*.js', { sourcemaps: true })
     .pipe(concat('app.js'))
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
