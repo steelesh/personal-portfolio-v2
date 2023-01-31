@@ -7,8 +7,13 @@ main {
   background-color: whitesmoke;
   max-width: 870px;
   font-size: 16px;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   text-align: left;
+}
+
+.name-link,
+.name-link:hover {
+  text-decoration: none;
 }
 
 a {
@@ -31,6 +36,18 @@ hr {
   margin: 0 auto;
   padding: 0;
   border-top: 1.75px solid #24292f;
+}
+
+.header-container {
+  padding-top: 2rem;
+  background-color: whitesmoke;
+  max-width: 870px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
 }
 
 header {
@@ -68,6 +85,17 @@ header {
   color: whitesmoke;
   font-variant: small-caps;
 }
+
+footer {
+  position: fixed;
+  background: whitesmoke;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+}
+
 .footer-container {
   display: flex;
   max-width: 870px;
