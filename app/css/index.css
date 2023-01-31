@@ -43,22 +43,37 @@ main {
 }
 
 header {
-  background-color: black;
   max-width: 870px;
   margin: 2rem auto 0 auto;
 }
 
+.nav-bar {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.nav-link {
+  padding: 1rem 0;
+}
+
+.nav-link > a {
+  color: black;
+}
+
 .name-header {
-  padding: 1rem 2rem;
+  margin-bottom: 0;
+  background-color: black;
+  padding: 0.5rem 2rem;
   font-size: 250%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-variant: small-caps;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
 }
 
 .text-container p {
   margin-top: 1.75rem;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
+    serif;
   font-size: 16px;
 }
 
@@ -68,17 +83,27 @@ header {
 }
 
 .footer-text {
+  margin-top: 0.5rem;
   font-size: 10px;
-  text-align: center;
+  text-align: right;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-top: 1.75px solid black;
 }
 
 .link-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 span {
   margin-top: 0.5rem;
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
+    serif;
 }
 
 .resume-link {
@@ -86,6 +111,8 @@ span {
   margin-right: 20px;
   background-color: black;
   padding: 0.5rem 1.5rem;
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
+    serif;
 }
 
 .resume-link > a {
@@ -98,6 +125,8 @@ span {
   background-color: black;
   margin-left: 20px;
   padding: 0.5rem 1.5rem;
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
+    serif;
 }
 
 .contact-link > a {
@@ -122,10 +151,16 @@ span {
   .text-container {
     padding: 0;
   }
+  .link-container {
+    margin-bottom: 3rem;
+  }
   header {
     margin-top: 0;
   }
   .name-header {
     text-align: left;
+  }
+  .footer-text {
+    font-size: 6px;
   }
 }
