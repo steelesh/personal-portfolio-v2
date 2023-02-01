@@ -8,7 +8,7 @@
 
 .project-outro {
   text-align: center;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 3rem auto;
   max-width: 822px;
 }
 
@@ -38,11 +38,23 @@ h3 {
 }
 
 .card-deck {
+  width: 95%;
+  margin: auto;
+}
+
+.footer-container-projects {
+  display: flex;
+  max-width: 870px;
+  justify-content: space-between;
+  margin: 1rem auto 3rem auto;
 }
 
 @media (width <= 650px) {
   .intro-text {
     width: 95%;
+  }
+  .project-outro {
+    margin: 2rem auto 3rem auto;
   }
 }
 
