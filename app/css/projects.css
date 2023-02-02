@@ -12,10 +12,6 @@
   max-width: 822px;
 }
 
-.row {
-  margin-bottom: 3rem;
-}
-
 footer {
   background: whitesmoke;
 }
@@ -42,17 +38,18 @@ h3 {
   margin: auto;
 }
 
+.row {
+  margin: 0;
+}
+
 @media only screen and (max-width: 40.625em) {
+  .card-deck .card {
+    margin-bottom: 2.5rem;
+  }
   .intro-text {
     width: 95%;
   }
   .project-outro {
     margin: 2rem auto 3rem auto;
-  }
-}
-
-@media (width <= 36em) {
-  .row {
-    margin: 0;
   }
 }
