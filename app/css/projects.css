@@ -42,14 +42,7 @@ h3 {
   margin: auto;
 }
 
-.footer-container-projects {
-  display: flex;
-  max-width: 870px;
-  justify-content: space-between;
-  margin: 1rem auto 3rem auto;
-}
-
-@media (width <= 650px) {
+@media only screen and (max-width: 40.625em) {
   .intro-text {
     width: 95%;
   }
@@ -58,7 +51,7 @@ h3 {
   }
 }
 
-@media (width <= 576px) {
+@media (width <= 36em) {
   .row {
     margin: 0;
   }

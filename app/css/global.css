@@ -1,11 +1,14 @@
-body {
+body,
+html {
   background-color: whitesmoke;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 main {
   margin: 150px auto auto auto;
   background-color: whitesmoke;
-  max-width: 870px;
+  max-width: 54.375rem;
   font-size: 16px;
   padding: 1.5rem 1.5rem 0 1.5rem;
   text-align: left;
@@ -32,7 +35,7 @@ a:hover {
 }
 
 hr {
-  width: 870px;
+  max-width: 54.375rem;
   margin: 0 auto;
   padding: 0;
   border-top: 1.75px solid #24292f;
@@ -41,7 +44,7 @@ hr {
 .header-container {
   padding-top: 2rem;
   background-color: whitesmoke;
-  max-width: 870px;
+  max-width: 54.375rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -51,7 +54,7 @@ hr {
 }
 
 header {
-  max-width: 870px;
+  max-width: 54.375rem;
   background-color: #24292f;
   margin: 2rem auto 0 auto;
   position: fixed;
@@ -93,7 +96,7 @@ footer {
 
 .footer-container {
   display: flex;
-  max-width: 870px;
+  max-width: 54.375rem;
   margin: 1rem auto 2rem auto;
   justify-content: space-between;
 }
@@ -120,40 +123,53 @@ footer {
   text-align: right;
 }
 
-@media (max-width: 870px) {
+.footer-container-projects {
+  display: flex;
+  max-width: 54.375rem;
+  justify-content: space-between;
+  margin: 1rem auto 3rem auto;
+}
+
+.toggle-container {
+  z-index: -100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 4rem auto;
+}
+
+@media only screen and (max-width: 54.375em) {
   header {
+    padding-top: 0;
     margin-top: 0;
   }
+  .ico-container {
+    margin-left: 2rem;
+    gap: 1.75rem;
+  }
+  .icon {
+    width: 2rem;
+  }
+  .footer-text {
+    margin-right: 2rem;
+  }
 }
-@media (width <= 650px) {
+
+@media only screen and (max-width: 40.625em) {
   .link-container {
     margin-bottom: 2rem;
   }
   .footer-container {
     margin: 1rem auto 3rem auto;
   }
-
   .ico-container {
-    margin-left: 1.5rem;
-    gap: 2rem;
+    gap: 1rem;
   }
-
-  .icon {
-    width: 1.5rem;
-  }
-
-  .footer-text {
-    margin-right: 1.5rem;
-  }
-
   header {
     margin-top: 0;
   }
   .name-header {
     font-size: 200%;
-  }
-  .footer-text {
-    font-size: 8px;
   }
   main {
     margin-top: 121.5px;

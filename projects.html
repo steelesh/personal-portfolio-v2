@@ -84,8 +84,8 @@
     <main>
       <p class="intro-text">
         <u>
-          All projects are built from the ground up, from planning and designing
-          the project, to writing the code to make it work.
+          the projects below were built from the ground up, from planning and
+          designing the project, to writing the code to make it work.
         </u>
       </p>
       <div class="toggle-container">
@@ -123,16 +123,34 @@
       <div class="card-deck">
         <div class="row d-md-flex flex-md-wrap">
           <div class="card col-md-6">
-            <img class="card-img-top" src="..." alt="Card image cap" />
+            <a
+              href="https://www.github.com/steelesh/personal-portfolio/"
+              target="_blank"
+            >
+              <img
+                class="card-img-top"
+                src="./assets/images/personalportfoliov1.png"
+                alt="Card image cap"
+              />
+            </a>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <a
+                href="https://www.github.com/steelesh/personal-portfolio/"
+                target="_blank"
+              >
+                <h5 class="card-title">Personal Portfolio website</h5>
+              </a>
               <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Isn't that what this is? This was the first version but in short
+                yes, it is - but with this version I experimented with SVGs and
+                CSS transition / animation. I also learned how to better
+                manipulate the DOM using Vanilla Javascript for a dynamic web
+                page.
               </p>
               <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">
+                  <p class="personal-portfolio-date">Last updated:</p>
+                </small>
               </p>
             </div>
           </div>
@@ -161,7 +179,7 @@
                 longer.
               </p>
               <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted"></small>
               </p>
             </div>
           </div>
@@ -241,6 +259,7 @@
       </div>
     </footer>
     <!-- Bootstrap CDNs-->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -256,8 +275,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./app/js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./app/js/projects/projects.js"></script>
     <script>
       $(document).ready(function () {
         if ($(window).width() < 650) {

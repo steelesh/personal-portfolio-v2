@@ -83,7 +83,7 @@ span {
   color: whitesmoke;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 54.375em) {
   .contact-link {
     padding: 0.5rem 0.75rem;
   }
@@ -92,7 +92,7 @@ span {
   }
 }
 
-@media (width <= 650px) {
+@media only screen and (max-width: 40.625em) {
   .portrait,
   .portrait-container {
     display: none;
