@@ -109,10 +109,6 @@ span {
     border: 5px solid #24292f;
     border-radius: 50%;
     display: block;
-    filter: grayscale(100%);
     transition: all 0.5s ease;
-  }
-  .portrait-mobile:hover {
-    filter: grayscale(0%);
   }
 }

@@ -107,7 +107,7 @@ footer {
 
 .ico-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .icon {
@@ -122,7 +122,6 @@ footer {
 }
 
 .footer-text {
-  margin-top: 0.5rem;
   font-size: 10px;
   text-align: right;
 }
@@ -149,10 +148,10 @@ footer {
   }
   .ico-container {
     margin-left: 2rem;
-    gap: 1.75rem;
+    gap: 2rem;
   }
   .icon {
-    width: 2rem;
+    width: 2.25rem;
   }
   .footer-text {
     margin-right: 2rem;
@@ -164,10 +163,16 @@ footer {
     margin-bottom: 2rem;
   }
   .footer-container {
-    margin: 1rem auto 3rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ico-container {
-    gap: 1rem;
+    gap: 8rem;
+    margin: 1rem 0 2rem 0;
+  }
+  .footer-text {
+    margin: 0;
   }
   header {
     margin-top: 0;
@@ -177,5 +182,9 @@ footer {
   }
   main {
     margin-top: 121.5px;
+  }
+  .icon {
+    filter: none;
+    width: 2.5rem;
   }
 }
