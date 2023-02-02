@@ -39,12 +39,15 @@ h3 {
 }
 
 .row {
-  margin: 0;
+  margin: 2rem;
 }
 
 @media only screen and (max-width: 40.625em) {
   .card-deck .card {
     margin-bottom: 2.5rem;
+  }
+  .row {
+    margin: 0;
   }
   .intro-text {
     width: 95%;
