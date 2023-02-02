@@ -124,13 +124,7 @@ footer {
 .footer-text {
   font-size: 10px;
   text-align: right;
-}
-
-.footer-container-projects {
-  display: flex;
-  max-width: 54.375rem;
-  justify-content: space-between;
-  margin: 1rem auto 3rem auto;
+  padding-top: 0.5rem;
 }
 
 .toggle-container {
@@ -152,6 +146,9 @@ footer {
   }
   .icon {
     width: 2.25rem;
+  }
+  .footer-text {
+    padding-top: 0.75rem;
   }
   .footer-text {
     margin-right: 2rem;
@@ -186,5 +183,8 @@ footer {
   .icon {
     filter: none;
     width: 2.5rem;
+  }
+  .footer-text {
+    padding-top: 1.25rem;
   }
 }
