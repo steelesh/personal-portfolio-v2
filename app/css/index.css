@@ -1,7 +1,7 @@
 .card {
   padding: 0 1.2rem 1.2rem 1.2rem;
   border: none;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .portrait {
@@ -66,7 +66,7 @@ span {
 
 .resume-link > a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 
 .contact-link {
@@ -80,7 +80,7 @@ span {
 
 .contact-link > a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 
 @media only screen and (max-width: 54.375em) {
