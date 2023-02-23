@@ -15,7 +15,7 @@ fetch('https://api.github.com/repos/steelesh/personal-portfolio/commits')
     ).innerHTML = `Last updated ${formattedDate}`;
   });
 
-fetch('https://api.github.com/repos/steelesh/js-hangman/commits')
+fetch('https://api.github.com/repos/steelesh/Hangman/commits')
   .then((response) => response.json())
   .then((commits) => {
     // Get the date of the most recent commit
