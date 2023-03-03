@@ -33,8 +33,6 @@
 
 .text-container p {
   margin-top: 1.75rem;
-  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
-    serif;
   font-size: 17px;
 }
 
@@ -51,8 +49,6 @@
 
 span {
   margin-top: 0.5rem;
-  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
-    serif;
 }
 
 .resume-link {
@@ -60,8 +56,6 @@ span {
   margin-right: 20px;
   background-color: #24292f;
   padding: 0.5rem 1.5rem;
-  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
-    serif;
 }
 
 .resume-link > a {
@@ -74,8 +68,6 @@ span {
   background-color: #24292f;
   margin-left: 20px;
   padding: 0.5rem 1.5rem;
-  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
-    serif;
 }
 
 .contact-link > a {

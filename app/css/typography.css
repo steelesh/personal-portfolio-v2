@@ -1,0 +1,33 @@
+p,
+span,
+.resume-link,
+.contact-link {
+  font-family: 'Source Serif Pro';
+}
+
+.name-header {
+  font-family: 'Neutral Face';
+  letter-spacing: 0.16rem;
+  font-weight: 600;
+}
+
+h2,
+h3,
+.nav-link,
+.social-link,
+.intro-text,
+.card-title {
+  font-family: 'Satoshi';
+}
+
+.card-text {
+  font-family: Helvetica;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-weight: 700;
+}
